@@ -1,0 +1,11 @@
+com\mycompany\trainermvc\services\Trainer.class
+com\mycompany\trainermvc\ServletInitializer.class
+com\mycompany\trainermvc\controllers\Welcome.class
+com\mycompany\trainermvc\controllers\Trainer.class
+com\mycompany\trainermvc\dao\AbstractDao.class
+com\mycompany\trainermvc\entities\Trainer.class
+com\mycompany\trainermvc\configuration\AppConfig.class
+com\mycompany\trainermvc\TrainerMvcApplication.class
+com\mycompany\trainermvc\configuration\AppInitializer.class
+com\mycompany\trainermvc\dao\TrainerDao.class
+com\mycompany\trainermvc\configuration\HibernateConfiguration.class
