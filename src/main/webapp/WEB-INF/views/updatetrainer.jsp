@@ -30,11 +30,10 @@
                 <div id="extraforms">
                     <f:form method="POST" action="saveupdate" modelAttribute="trainer">
                         <f:input type="hidden" path="id" id="id"/>
-                        <p class="firstp">First name*<br/></p><f:input class="inputs" id="fnt" path="firstName" /><f:errors path="firstName" cssClass="error"></f:errors><br>
+                        <p class="firstp">First name*<br/></p><f:input class="inputs" id="fnt" path="firstName" /><br>
                         <p class="otherp">Last name*<br/></p><f:input class="inputs" id="lnt" path="lastName" /><br>
                         <p class="otherp">Subject*<br/></p><f:input class="inputs" id="st" path="subject" /><br>
                         <f:button class="formbuttons addbuttons" name="btnUpdTrainer">Update Trainer</f:button>
-                        <div class="error">${error}</div>
                     </f:form>       
                 </div> 
             </main>

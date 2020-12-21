@@ -25,7 +25,6 @@ public class Trainer {
 
     @RequestMapping(value = {"/{id}"})
     public String showTrainer(ModelMap view, @PathVariable String id) {
-        view.addAttribute("projectName", "Trainer Mvc");
         com.mycompany.trainermvc.entities.Trainer trainer = trainerService.findById(Integer.parseInt(id));
         view.addAttribute("trainer", trainer);
         return ("trainer");
@@ -43,7 +42,6 @@ public class Trainer {
 
     @RequestMapping("/new")
     public String newTrainer(ModelMap view) {
-        view.addAttribute("projectName", "Trainer Mvc");
         com.mycompany.trainermvc.entities.Trainer trainer = new com.mycompany.trainermvc.entities.Trainer();
         view.addAttribute("trainer", trainer);
         return ("newtrainer");
@@ -51,7 +49,6 @@ public class Trainer {
 
     @RequestMapping(value = "/new", method = RequestMethod.POST)
     public String saveNewTrainer(ModelMap view, @Valid com.mycompany.trainermvc.entities.Trainer trainer, BindingResult bindingResult) {
-        view.addAttribute("projectName", "Trainer Mvc");
         if (bindingResult.hasErrors()) {
             view.addAttribute("error", "There are errors on the form!");
         } else {
@@ -70,7 +67,6 @@ public class Trainer {
     @PostMapping("/update/saveupdate")
     public String saveUpdateTrainer(ModelMap view,
             com.mycompany.trainermvc.entities.Trainer trainer) {
-        view.addAttribute("projectName", "Trainer Mvc");
         trainerService.update(trainer);
         return ("redirect:/welcome");
     }

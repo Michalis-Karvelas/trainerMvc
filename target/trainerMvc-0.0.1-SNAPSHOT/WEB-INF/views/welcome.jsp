@@ -41,6 +41,9 @@
                         Delete a trainer with a known-existing id: trainer/delete/{id}</br>
                         List of all trainers: trainer/list</br>
                     </p>
+                    <p>**Important note: If you try to delete, update, or check the data using the "url method" and you</br>
+                        insert a non existing id you will be redirected to an error page. So be cautious
+                    </p>
                 </div> 
             </main>
             <footer>

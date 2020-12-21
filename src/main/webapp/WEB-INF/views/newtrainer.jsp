@@ -29,9 +29,12 @@
                 </div> 
                 <div id="extraforms">
                     <f:form method="POST" action="new" modelAttribute="trainer">
-                        <p class="firstp">First name*<br/></p><f:input class="inputs" id="fnt" path="firstName" /><br>
-                        <p class="otherp">Last name*<br/></p><f:input class="inputs" id="lnt" path="lastName" /><br>
-                        <p class="otherp">Subject*<br/></p><f:input class="inputs" id="st" path="subject" /><br>
+                        <p class="firstp">First name*<br/></p><f:input class="inputs" id="fnt" path="firstName" /></br>
+                        <f:errors path="firstName" cssClass="error"></f:errors></br>
+                        <p class="otherp">Last name*<br/></p><f:input class="inputs" id="lnt" path="lastName" /></br>
+                        <f:errors path="firstName" cssClass="error"></f:errors></br>
+                        <p class="otherp">Subject*<br/></p><f:input class="inputs" id="st" path="subject" /></br>
+                        <f:errors path="firstName" cssClass="error"></f:errors></br>
                         <f:button class="formbuttons addbuttons" name="btnNewTrainer">Insert New Trainer</f:button>
                         <div class="error">${error}</div>
                     </f:form>
