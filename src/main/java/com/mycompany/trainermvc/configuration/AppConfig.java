@@ -31,11 +31,4 @@ public class AppConfig implements WebMvcConfigurer {
         registry.addResourceHandler("/js/**").addResourceLocations("classpath:/static/js/");
         registry.addResourceHandler("/images/**").addResourceLocations("classpath:/static/images/");
     }
-
-//	@Bean
-//	public MessageSource messageSource() {
-//	    ResourceBundleMessageSource messageSource = new ResourceBundleMessageSource();
-//	    messageSource.setBasename("messages");
-//	    return messageSource;
-//	}
 }

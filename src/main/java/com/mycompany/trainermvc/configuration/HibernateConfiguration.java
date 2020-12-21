@@ -19,15 +19,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @ComponentScan({"com.mycompany.trainermvc"})
 @PropertySource(value = {"classpath:application.properties"})
 public class HibernateConfiguration {
-    // implementation structure
-    // TransactionManager
-    // SessionFactory
-    // Source
-    // Properties
 
-    // real world case
-    // SessionFactory
-    // TransactionManager
     @Autowired
     private Environment environment;
 
@@ -43,7 +35,6 @@ public class HibernateConfiguration {
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-//        BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName(environment.getRequiredProperty("spring.datasource.driver-class-name"));
         dataSource.setUrl(environment.getRequiredProperty("spring.datasource.url"));
         dataSource.setUsername(environment.getRequiredProperty("spring.datasource.username"));
